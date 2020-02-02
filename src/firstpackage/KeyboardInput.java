@@ -31,5 +31,7 @@ public class KeyboardInput {
         System.out.println("Your age is: " + age);
         System.out.format("Your weight is: %.1f \n",  weight);
         System.out.println("Your hair color is: " + hairColor);
+
+
     }
 }
