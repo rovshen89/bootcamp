@@ -12,7 +12,7 @@ public class CharCompare {
             System.out.println("line 2");
         }*/
 
-        int number;
+        /*int number;
         Scanner newScanner = new Scanner(System.in);
         System.out.println("Please enter number");
         number = newScanner.nextInt();
@@ -20,8 +20,20 @@ public class CharCompare {
         if (number % 2 == 1){
             System.out.println("odd");
         }
-        System.out.println("even");
+        System.out.println("even");*/
 
+        boolean gift = true;
+        boolean homework = false;
+
+        System.out.println(gift != homework);
+
+        int a = 2;
+        int b = 3;
+        int c = 4;
+
+        a = b;
+        c = a;
+        System.out.println(a+b+c);
     }
 }
 
