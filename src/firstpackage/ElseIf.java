@@ -8,7 +8,7 @@ public class ElseIf {
         int N = scanner.nextInt();
 
         if(N % 2 == 1){
-            System.out.println("odd");
+            System.out.println("Weird");
         }
         else if(N % 2 == 0 && (N > 2 && N < 6)){
             System.out.println("Not weird");
