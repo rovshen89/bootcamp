@@ -15,7 +15,7 @@ public class CustomerBill {
             if(usage <= 100){
                 System.out.println("Monthly payment will be $10");
             }
-            else if(usage >= 101){
+            else{
                 System.out.println("Monthly payment will be $40");
             }
         }
