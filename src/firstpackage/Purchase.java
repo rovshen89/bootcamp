@@ -19,8 +19,11 @@ public class Purchase {
             }
 
         }
-        else {
+        else if (select.equalsIgnoreCase("art")){
             System.out.println("Nice choice.");
+        }
+        else{
+            System.out.println("Only math or art!");
         }
     }
 }
