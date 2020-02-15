@@ -11,11 +11,11 @@ public class NestedLoop {
 //            for (int j = 0; j < 5; j++){
 //                System.out.println("Outer for loop I: " + i + " Inner for loop J: " + j);
 //            }
-            for (int i = 0; i < 1; i++){
-                for (int j = 0; j < 3; j++){
-                    System.out.print("Hello ");
+            for (int i = 1; i <= 10; i++){
+                for (int j = 1; j <= 10; j++){
+                    System.out.println (i +" x " + j+" = "+ i * j);
                 }
-                System.out.print("World ");
+//                System.out.print("World ");
         }
     }
 }
