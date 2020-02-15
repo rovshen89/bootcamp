@@ -1,15 +1,27 @@
 package firstpackage;
+import java.util.Scanner;
 
 public class OCATest {
     public static void main(String[] args) {
-        int x = 4;
-        long y = x * 4 - x++;
-        if(y<10){
-            System.out.println("Too low");
+        Scanner number = new Scanner(System.in);
+        System.out.println("Enter start number: ");
+        int start=number.nextInt();
+        System.out.println("Enter ending number: ");
+        int end=number.nextInt();
+        for (int j=start; j<=end; j++){
+            System.out.print("\t\t" + j);
         }
-        else {
-            System.out.println("just right");
+        System.out.println('\n');
+        for (int x=start; x<=end; x++) {
+            System.out.print("--------");
         }
-        System.out.println("too hugh");
+        System.out.println('\n');
+        for (int i=start; i<=end; i++) {
+            System.out.print(i+"\t|");
+            for (int j=start; j<=end; j++){
+                System.out.print("\t" + (i * j) + "\t");
+            }
+            System.out.println('\n');
+        }
     }
 }
