@@ -9,16 +9,26 @@ public class Stars {
 //            System.out.println(" ");
 //
 //        }
+//         int i = 0; int j = 0;
+//        while(i<40){
+//            j=0;
+//            while(j<11){
+//                System.out.print("* \t");
+//                j++;
+//            }
+//            System.out.println();
+//            i++;
+//        }
         int i = 0; int j = 0;
-        while(i<11){
-            j=0;
-            while(j<11){
+        do{
+            j = 0;
+            do{
                 System.out.print("* \t");
                 j++;
-            }
+            }while (j<10);
             System.out.println();
             i++;
-        }
+        }while(i<20);
 
     }
 }
