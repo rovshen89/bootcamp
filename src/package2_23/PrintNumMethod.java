@@ -17,5 +17,6 @@ public class PrintNumMethod {
 
     public static void main(String[] args) {
         printNum();
+        charANdASC();
     }
 }
