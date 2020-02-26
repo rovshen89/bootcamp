@@ -6,11 +6,16 @@ public class SimpleReverse {
         for (int i = text.length()-1; i >=0; i--){
             reversed += text.charAt(i);
         }
-        System.out.println(reversed);
+        if (reversed.equals(text)){
+            System.out.println("Palindrome");
+        }else{
+            System.out.println("Not Palindrome");
+        }
+//        System.out.println(reversed);
     }
 
     public static void main(String[] args) {
-        simpleStringrev("hello");
+        simpleStringrev("racecar");
     }
 
 }
