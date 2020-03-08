@@ -25,5 +25,11 @@ public class TwoDimensionalArrays {
             }
             System.out.println();
         }
+
+        String newS = "coronavirus?";
+        for (int i = 0; i < newS.length(); i++){
+            char c = newS.charAt(i);
+            System.out.println(c);
+        }
         }
 }
