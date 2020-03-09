@@ -6,7 +6,7 @@ public class MovieDecision {
     }
 
     public static void decideMoview(double imdb, double totalVotes, double boxOffice){
-        if ((imdb * totalVotes - boxOffice)>10){
+        if ((imdb * totalVotes / boxOffice)>10){
             System.out.println("Watch the Movie");
         }
         else {
