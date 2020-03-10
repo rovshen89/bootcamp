@@ -75,4 +75,12 @@ public class ArrayStats {
             System.out.println(returnMax(array[i]) - returnMin(array[i]));
         }
     }
+
+    public static int[] returnMaxDiff(int[][] array){
+        int[] maxDiff = new int[array.length];
+        for (int i = 0; i <array.length; i++){
+            maxDiff[i] = returnMax(array[i]) - returnMin(array[i]);
+        }
+        return maxDiff;
+    }
 }
