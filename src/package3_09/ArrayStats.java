@@ -9,7 +9,13 @@ public class ArrayStats {
 //            System.out.print(" " + numbers);
 //        }
 
-        printRowMin(myArray);
+//        printRowMin(myArray);
+        int[] minNumbers = returnRowsMin(myArray);
+        for (int numbers: minNumbers){
+            System.out.println(numbers);
+        }
+
+        printMaxDiff(myArray);
     }
 
     public static int returnMax(int[] array) {
@@ -51,6 +57,22 @@ public class ArrayStats {
     public static void printRowMin(int[][] array){
         for (int[] row: array){
             System.out.println(returnMin(row));
+        }
+    }
+
+    public static int[] returnRowsMin(int[][] arr){
+        int[] mins = new int[arr.length];
+        int index = 0;
+        for (int[] row: arr){
+            mins[index] = returnMin(row);
+            index++;
+        }
+        return mins;
+    }
+
+    public static void printMaxDiff(int[][] array){
+        for (int i = 0; i < array.length; i++){
+            System.out.println(returnMax(array[i]) - returnMin(array[i]));
         }
     }
 }
