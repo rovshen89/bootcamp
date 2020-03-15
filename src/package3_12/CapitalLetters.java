@@ -1,4 +1,4 @@
-package package_312;
+package package3_12;
 
 public class CapitalLetters {
     public static void main(String[] args) {
