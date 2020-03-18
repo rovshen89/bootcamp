@@ -19,4 +19,7 @@ public class PrintNumMethod {
         printNum();
         charANdASC();
     }
+
+    String name = "asdsad";
+
 }
