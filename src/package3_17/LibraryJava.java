@@ -75,6 +75,23 @@ public class LibraryJava {
         this.returnDate = returnDate;
     }
 
+
+    public void borrowBook(String date){
+        if (this.availability){
+            this.availability = false;
+            String[] arr = date.split("/");
+            int month = Integer.parseInt(arr[0]);
+            int day = Integer.parseInt(arr[1]);
+            if (month > 0 && month < 13 && day > 0 && day < 32 ){
+                this.borrowDate = date;
+            }else{
+                System.out.println("Date is incorrect");
+            }
+        }else{
+            System.out.println("Book is not available");
+        }
+    }
+
     public void returnBook(String date){
         this.availability = true;
         String[] dateArr = date.split("/");
