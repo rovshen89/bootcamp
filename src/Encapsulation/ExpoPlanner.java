@@ -20,4 +20,14 @@ public class ExpoPlanner extends Planner {
             System.out.println();
         }
     }
+
+    void modifyCheckList(String date, String checkList[]){
+        int index = 0;
+        for (int i = 0; i < super.datesEvents.length; i++){
+            if (super.datesEvents[i][0].equalsIgnoreCase(date)){
+                index = i;
+            }
+        }
+        this.checkLists[index] = checkList;
+    }
 }

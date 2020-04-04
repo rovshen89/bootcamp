@@ -8,5 +8,9 @@ public class ExpoPlannerTest {
         expo1.addEvent("April 15", "Sister birthday");
         expo1.listAll();
         expo1.deleteEvent("April 9");
+
+        String[] checkList = {"A", "B", "C", "D", "E", "A", "B", "C","E", "F"};
+        expo1.modifyCheckList("April 15", checkList);
+        expo1.listAll();
     }
 }
