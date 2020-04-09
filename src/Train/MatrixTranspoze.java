@@ -18,6 +18,9 @@ public class MatrixTranspoze {
                catch (ArrayIndexOutOfBoundsException e){
                    System.out.println(" x ");
                }
+               finally {
+                   System.out.print("Lined printed ");
+               }
             }
             System.out.println();
         }
