@@ -2,6 +2,7 @@ package ArrayList;
 
 import package2_24.Array;
 
+import java.sql.SQLClientInfoException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -20,6 +21,9 @@ public class ItemRemoving {
             }
         }
         System.out.println(newList);
+
+        System.out.println(removeItem(myList, "Java"));
+
     }
     public static ArrayList<String> removeItem(ArrayList<String> orgList, String itemRemove){
         ArrayList<String> updateList = new ArrayList<>();
