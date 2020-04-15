@@ -62,7 +62,7 @@ public class ArrayListWindow {
                 }
                 counterRow += counterCase;
             }
-            System.out.println("There are " + counterRow + " upper case letter");
+            System.out.println("There are " + counterRow + " upper case letter at row " + (i +1));
         }
     }
 }
