@@ -7,6 +7,10 @@ import java.util.Arrays;
 
 public class ArrayListWindow {
     public static void main(String[] args) {
+        for (int i = 100; i <= 0; i--){
+            System.out.println(100 - (i-1));
+        }
+
         int[] window = {1,2};
         ArrayList<ArrayList<Integer>> matrix = new ArrayList<>();
         matrix.add(new ArrayList<>());
@@ -18,6 +22,15 @@ public class ArrayListWindow {
         matrix.get(2).addAll(Arrays.asList(9,10,11,12));
         System.out.println(matrix);
         applyWindowing(matrix, window);
+
+
+        ArrayList<ArrayList<String>> myStr = new ArrayList<>();
+        myStr.add(new ArrayList<>());
+        myStr.get(0).addAll(Arrays.asList("Java", "is", "FuN"));
+        myStr.add(new ArrayList<>());
+        myStr.get(1).addAll(Arrays.asList("JaVa", "is", "SuPeR"));
+        System.out.println(myStr);
+        findUpperCase(myStr);
     }
 
     public static void applyWindowing(ArrayList<ArrayList<Integer>> arr, int[] window){
@@ -31,7 +44,25 @@ public class ArrayListWindow {
             }
         }
         for (ArrayList<Integer> a: arr){
-            System.out.print(a);
+            System.out.println(a);
+        }
+    }
+
+    public static void findUpperCase(ArrayList<ArrayList<String>> str){
+        int counterCase;
+        int counterRow;
+        for (int i = 0; i < str.size(); i++){
+            counterRow = 0;
+            for (int j = 0; j < str.get(i).size(); j++){
+                counterCase = 0;
+                for (int k = 0; k < str.get(i).get(j).length(); k++){
+                    if (Character.isUpperCase(str.get(i).get(j).charAt(k))){
+                        counterCase++;
+                    }
+                }
+                counterRow += counterCase;
+            }
+            System.out.println("There are " + counterRow + " upper case letter");
         }
     }
 }
