@@ -31,6 +31,7 @@ public class ArrayListWindow {
         myStr.get(1).addAll(Arrays.asList("JaVa", "is", "SuPeR"));
         System.out.println(myStr);
         findUpperCase(myStr);
+        findLowerCase(myStr);
     }
 
     public static void applyWindowing(ArrayList<ArrayList<Integer>> arr, int[] window){
@@ -63,6 +64,24 @@ public class ArrayListWindow {
                 counterRow += counterCase;
             }
             System.out.println("There are " + counterRow + " upper case letter at row " + (i +1));
+        }
+    }
+
+    public static void findLowerCase(ArrayList<ArrayList<String>> myStr){
+        int counterWord;
+        int counterRow;
+        for (int i = 0; i < myStr.size(); i++){
+            counterRow = 0;
+            for (int j = 0; j < myStr.get(i).size(); j++){
+                counterWord = 0;
+                for (int k = 0; k < myStr.get(i).get(j).length(); k++){
+                    if (Character.isLowerCase(myStr.get(i).get(j).charAt(k))){
+                        counterWord ++;
+                    }
+                }
+                counterRow += counterWord;
+            }
+            System.out.println("there are " + counterRow + " lower case letter in row " + (i + 1));
         }
     }
 }

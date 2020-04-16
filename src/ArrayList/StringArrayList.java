@@ -4,6 +4,7 @@ import package2_24.Array;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.concurrent.atomic.DoubleAccumulator;
 
 public class StringArrayList {
     public static void main(String[] args) {
@@ -17,6 +18,10 @@ public class StringArrayList {
         findUpperCase(words);
         findLowerCase(words);
         upperInElement(words);
+
+
+        ArrayList<Integer> myInt = new ArrayList<>(Arrays.asList(89,2,3,4,5,6,88));
+        returnLarger(myInt);
     }
 
     public static void findUpperCase(ArrayList<ArrayList<String>> arr){
@@ -68,5 +73,20 @@ public class StringArrayList {
                 System.out.println("There are "  + counterWord + " upper cases at in " + arr.get(i).get(j));
             }
         }
+    }
+
+    public static void returnLarger(ArrayList<Integer> myArr){
+        int max;
+        if (myArr.get(0) > myArr.get(myArr.size() - 1)){
+            max = myArr.get(0);
+        }else{
+            max = myArr.get(myArr.size()-1);
+        }
+
+        for (int i = 0; i < myArr.size() ; i++) {
+            myArr.set(i, max);
+        }
+
+        System.out.println(myArr);
     }
 }

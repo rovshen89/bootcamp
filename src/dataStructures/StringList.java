@@ -2,7 +2,7 @@ package dataStructures;
 
 import java.util.*;
 
-public class StringList {
+public class  StringList {
     public static void main(String[] args) {
         String [] things = {"eggs", "lasers", "hats", "pie"};
         List<String> list1 = new ArrayList<String>();
