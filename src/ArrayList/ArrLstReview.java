@@ -1,6 +1,9 @@
 package ArrayList;
 
+import package2_24.Array;
+
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class ArrLstReview {
     public static void main(String[] args) {
@@ -21,9 +24,16 @@ public class ArrLstReview {
                 myArr.add(s);
                 System.out.print(myArr);
             }
-
         }
 
 
+        ArrayList<Integer> myNumbers = new ArrayList<>(Arrays.asList(1,2,3,4,5,6,7,8));
+//        ArrayList<Integer> swapNum = new ArrayList<>();
+        int temp;
+        int index = myNumbers.size()-1;
+        for (int i=0; i < myNumbers.size()/2; i++){
+            temp = myNumbers.get(i);
+
+        }
     }
 }
