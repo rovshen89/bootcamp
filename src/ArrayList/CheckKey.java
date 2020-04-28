@@ -11,7 +11,7 @@ public class CheckKey {
         hm.put("c", "C");
         hm.put("d", "D");
         System.out.println(hm);
-        isKeyHas(hm, "c");
+        System.out.println(isKeyHas(hm, "c"));
     }
 
     public static boolean isKeyHas(HashMap<String, String> check, String key){
