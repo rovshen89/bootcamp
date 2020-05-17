@@ -15,6 +15,7 @@ public class CheckPalindrome {
     }
 
     public static void main(String[] args) {
+
         System.out.println(checkPalindrome("madam"));
     }
 }
